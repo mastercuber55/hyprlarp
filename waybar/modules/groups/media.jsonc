@@ -1,0 +1,35 @@
+{
+	"group/media": {
+		"orientation": "horizontal",
+		"modules": [
+			"mpris",
+			"custom/media-prev",
+			"custom/media-play",
+			"custom/media-next",
+		],
+	},
+
+	"mpris": {
+		"format": "{title}",
+		"format-paused": "{title}",
+		"max-length": 30,
+        "ellipsis": "…",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+	},
+
+	"custom/media-prev": {
+        "format": "󰒮",
+        "on-click": "playerctl previous"
+    },
+
+   "custom/media-play": {
+	    "format": "󰐊",
+	    "on-click": "playerctl play-pause"
+	},
+
+    "custom/media-next": {
+        "format": "󰒭",
+        "on-click": "playerctl next"
+    }
+}

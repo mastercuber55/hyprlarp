@@ -1,0 +1,426 @@
+config_version = 14
+
+[bar.default]
+background_opacity = 0.79999998211860657
+center = [ "control-center", "clock" ]
+end = [ "group:g2", "group:g4", "tray" ]
+margin_edge = 3
+margin_ends = 10
+radius = 8
+start = [ "workspaces", "spacer_2", "widget_2", "media", "audio_visualizer", "widget" ]
+thickness = 32
+
+    [bar.default.dead_zone.actions]
+    left = "panel-toggle control-center home"
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g2"
+    members = [ "notifications", "clipboard", "spacer_3" ]
+    opacity = 0.0
+    padding = 0.0
+    widget_spacing = 8
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g4"
+    members = [ "output_volume", "input_volume" ]
+    opacity = 0.0
+    padding = 6.0
+    widget_spacing = 8
+
+[battery.device."/org/freedesktop/UPower/devices/headset_dev_56_98_14_F8_0A_D3"]
+warning_threshold = 50
+
+[calendar.account.personal_google]
+type = "google"
+
+[control_center]
+hidden_tabs = [ "monitor", "power", "network" ]
+sidebar = "full"
+sidebar_section = "full"
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = [
+    "desktop-widget-0000000000000001",
+    "desktop-widget-0000000000000003",
+    "desktop-widget-0000000000000004",
+    "desktop-widget-0000000000000005",
+    "desktop-widget-0000000000000006",
+    "desktop-widget-0000000000000008",
+    "desktop-widget-0000000000000009"
+]
+
+    [desktop_widgets.grid]
+    cell_size = 8
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 128.0
+    box_width = 288.0
+    cx = 427.0
+    cy = 292.5
+    output = "VGA-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        bands = 32
+        show_when_idle = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 368.0
+    box_width = 560.0
+    cx = 291.0
+    cy = 560.0
+    output = "VGA-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "calendar"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000004]
+    box_height = 128.0
+    box_width = 224.0
+    cx = 1221.0
+    cy = 128.0
+    output = "VGA-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "clock"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000005]
+    box_height = 128.0
+    box_width = 256.0
+    cx = 149.0
+    cy = 292.5
+    output = "VGA-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "media_player"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000006]
+    box_height = 224.0
+    box_width = 240.0
+    cx = 1221.0
+    cy = 324.0
+    output = "VGA-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "sticker"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000006.settings]
+        image_path = "/home/mastercuber55/Pictures/1ded45dd0be450d199660bd7012fb8fe.webp"
+        opacity = 1.0
+
+    [desktop_widgets.widget.desktop-widget-0000000000000008]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1227.0
+    cy = 678.0
+    output = "VGA-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "volume"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000009]
+    box_height = 112.0
+    box_width = 240.0
+    cx = 1223.0
+    cy = 520.0
+    output = "VGA-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "sysmon"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000009.settings]
+        stat = "cpu_usage"
+        stat2 = "cpu_temp"
+
+[dock]
+background_opacity = 0.21999999508261681
+concave_edge_corners = false
+icon_size = 32
+launcher_icon = "grid-pattern-filled"
+pinned = [ "firefox" ]
+position = "left"
+reserve_space = false
+show_dots = true
+smart_auto_hide = true
+
+[hot_corners]
+enabled = true
+
+[location]
+address = "Jagdalpur, India"
+
+[lockscreen]
+enabled = false
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@FALLBACK", "lockscreen-login-box@VGA-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@FALLBACK"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "FALLBACK"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@FALLBACK".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@VGA-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 683.0
+    cy = 586.0
+    output = "VGA-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@VGA-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[notification]
+background_opacity = 0.79999998211860657
+border = false
+
+[osd]
+background_opacity = 0.79999998211860657
+border = false
+offset_y = 100
+position = "bottom_center"
+
+    [osd.kinds]
+    brightness = false
+    keyboard_backlight = false
+    keyboard_layout = false
+    lock_keys = false
+    media = false
+    wifi = false
+
+[plugin_settings."aabidk20/yt-music"]
+mini_open_near_click = true
+mini_placement = "attached"
+
+[plugin_settings."ashur-d/wallpaper-widget"]
+close_on_apply = true
+hub_placement = "attached"
+hub_position = "bottom_center"
+notify_on_change = false
+wallpaper_dir = "/home/mastercuber55/Pictures/Wallpapers"
+
+[plugin_settings."h-jangra/keyviz"]
+overlay_placement = "attached"
+
+[plugin_settings."icefish/phone-connect"]
+battery_display = "hidden"
+
+[plugins]
+enabled = []
+
+[shell]
+app_icon_color = "primary"
+avatar_path = "/home/mastercuber55/Pictures/fischl pfp.webp"
+button_borders = false
+card_borders = false
+input_borders = false
+panel_anchor_bar = "default"
+password_style = "random"
+polkit_agent = true
+screen_time_enabled = true
+show_location = false
+time_format = "{:%I:%M %p}"
+
+    [shell.launcher]
+    app_grid = true
+    categories = false
+    fetch_exchange_rates = false
+
+    [shell.panel]
+    control_center_position = "center"
+    launcher_position = "auto"
+    open_near_click_launcher = true
+    transparency_mode = "soft"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "systemctl suspend"
+    countdown_seconds = 0.0
+    enabled = true
+    glyph = "moon-filled"
+    label = "Sleep"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = true
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    variant = "destructive"
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "3"
+    variant = "default"
+
+[theme]
+builtin = "Catppuccin"
+community_palette = "Oxocarbon"
+custom_palette = "persona5-fs"
+mode = "dark"
+pure_black_dark = true
+source = "wallpaper"
+wallpaper_scheme = "m3-fruit-salad"
+
+    [theme.templates]
+    enable_builtin_templates = false
+    enable_community_templates = false
+
+[wallpaper]
+directory = "/home/mastercuber55/Pictures/Wallpapers"
+edge_smoothness = 0.0
+transition = [ "disc", "fade", "zoom" ]
+transition_duration = 1000
+
+    [wallpaper.automation]
+    enabled = true
+    interval_seconds = 60
+
+    [wallpaper.default]
+    path = "/home/mastercuber55/Pictures/Wallpapers/natlan2.png"
+
+    [wallpaper.last]
+    path = "/home/mastercuber55/Pictures/Wallpapers/natlan2.png"
+
+    [wallpaper.monitors.FALLBACK]
+    path = "/home/mastercuber55/Pictures/Wallpapers/natlan-victoyr.png"
+
+    [wallpaper.monitors.VGA-1]
+    path = "/home/mastercuber55/Pictures/Wallpapers/natlan2.png"
+
+[widget.audio_visualizer]
+bands = 4
+enabled = false
+interactive = false
+width = 32
+
+[widget.clock]
+format = "{:%I:%M %p}"
+interactive = false
+
+[widget.control-center]
+enabled = false
+interactive = false
+
+[widget.input_volume]
+show_label = false
+
+[widget.launcher]
+glyph = "article"
+
+[widget.media]
+art_size = 20
+hide_when_no_media = true
+
+[widget.output_volume]
+show_label = false
+
+[widget.spacer_2]
+length = 145
+type = "spacer"
+
+[widget.spacer_3]
+length = 8
+type = "spacer"
+
+[widget.widget]
+type = "ashur-d/wallpaper-widget:widget"
+
+[widget.widget_2]
+type = "aabidk20/yt-music:widget"
+
+[widget.workspaces]
+change_color_on_hover = false
+empty_color = "on_surface_variant"
+focused_color = "on_surface"
+label_source = "name"
+occupied_color = "on_surface_variant"
+pill_scale = 0.75
+show_labels = false

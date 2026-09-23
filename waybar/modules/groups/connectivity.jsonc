@@ -1,0 +1,23 @@
+{
+    "group/connectivity": {
+        "orientation": "horizontal",
+        "modules": [
+            "bluetooth",
+            "network"
+        ]
+    },
+
+    "bluetooth": {
+        "format": "󰂯",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂱",
+        "tooltip-format": "{status}\n{num_connections} connected",
+        "on-click": "blueman-manager"
+    },
+
+    "network": {
+        "format-wifi": "󰤨",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰤭",
+    }
+}

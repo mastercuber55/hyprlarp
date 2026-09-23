@@ -1,0 +1,61 @@
+{
+    "positionX": "right",
+    "positionY": "top",
+
+    "control-center-width": 400,
+    "control-center-height": 0,
+
+    "widgets": [
+        "label",
+        "notifications",
+        "mpris",
+        "volume",
+    ],
+
+    "widget-config": {
+        "label": {
+            "text": "󰣇  Control Center"
+        },
+
+        "buttons-grid": {
+            "actions": [
+                {
+                    "label": "󰖔",
+                    "type": "toggle",
+                    "command": "pkill -x hyprsunset || hyprsunset &"
+                },
+                {
+                    "label": "󰂛",
+                    "type": "toggle",
+                    "command": "swaync-client --dnd"
+                },
+                {
+                    "label": "󰑋",
+                    "type": "toggle",
+                    "command": "pkill -x wf-recorder || wf-recorder -f \"$HOME/Videos/recording.mp4\""
+                },
+                {
+                    "label": "󰆍",
+                    "type": "command",
+                    "command": "alacritty"
+                },
+                {
+                    "label": "󰝰",
+                    "type": "command",
+                    "command": "thunar"
+                },
+            ]
+        },
+
+        "volume": {
+            "label": "󰕾",
+            "show-per-app": true,
+            "show-per-app-icon": true,
+            "show-per-app-label": false,
+
+            "expand-button-label": "󰅂",
+            "collapse-button-label": "󰅀",
+            "empty-list-label": "No Applications Playing"
+        }
+    }
+}

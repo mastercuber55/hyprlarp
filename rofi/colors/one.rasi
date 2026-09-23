@@ -1,0 +1,9 @@
+* {
+    background:     rgba(30, 30, 46, 0.85); /* Base */
+    background-alt: #313244;                /* Surface 0 */
+    foreground:     #cdd6f4;                /* Text */
+    selected:       #cba6f7;                /* Mauve */
+    selected-fg:    #11111b;                /* Crust */
+    active:         #a6e3a1;                /* Green */
+    urgent:         #f38ba8;                /* Red */
+}

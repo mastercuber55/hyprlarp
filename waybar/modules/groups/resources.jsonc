@@ -1,0 +1,17 @@
+{
+    "group/resources": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "memory"
+        ]
+    },
+
+    "cpu": {
+        "format": "󰻠 {usage}%"
+    },
+
+    "memory": {
+        "format": "󰍛 {percentage}%"
+    }
+}

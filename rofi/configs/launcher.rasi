@@ -1,0 +1,211 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: " Applications";
+    drun-display-format: "{name}";
+    icon-theme: "Vivid-Glassy-Dark-Icons";
+}
+
+@import "colors/one.rasi"
+
+* {
+    font: "JetBrainsMono Nerd Font 9";
+}
+
+
+/* Window */
+
+window {
+    transparency: "real";
+
+    location: center;
+    anchor: center;
+
+    width: 640px;
+    height: 400px;
+
+    border: 2px solid;
+    border-radius: 14px;
+    border-color: @selected;
+
+    background-color: @background;
+}
+
+
+/* Main layout */
+
+mainbox {
+    spacing: 14px;
+    margin: 20px;
+
+    background-color: transparent;
+
+    children: [
+        "inputbar",
+        "listview"
+    ];
+}
+
+
+/* Search bar */
+
+inputbar {
+    spacing: 0px;
+
+    background-color: transparent;
+    text-color: @foreground;
+
+    children: [
+        "prompt",
+        "textbox-prompt-colon",
+        "entry"
+    ];
+}
+
+prompt {
+    padding: 8px 14px;
+
+    border-radius: 100%;
+
+    background-color: @selected;
+    text-color: @selected-fg;
+}
+
+textbox-prompt-colon {
+    expand: false;
+
+    str: "::";
+
+    padding: 8px 10px;
+
+    background-color: inherit;
+    text-color: inherit;
+}
+
+entry {
+    padding: 8px 0px;
+
+    background-color: transparent;
+    text-color: @foreground;
+
+    cursor: text;
+
+    placeholder: "Search...";
+    placeholder-color: @foreground;
+}
+
+
+/* App grid */
+
+listview {
+    columns: 6;
+    lines: 3;
+
+    spacing: 12px;
+
+    cycle: true;
+    dynamic: true;
+
+    layout: vertical;
+
+    fixed-height: true;
+    fixed-columns: true;
+
+    scrollbar: false;
+
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+
+/* App items */
+
+element {
+    spacing: 6px;
+
+    border-radius: 0px;
+
+    background-color: transparent;
+    text-color: @foreground;
+
+    orientation: vertical;
+    cursor: pointer;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element selected.normal {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+
+/* App icons */
+
+element-icon {
+    padding: 12px;
+
+    size: 40px;
+
+    width: 640px;
+    height: 64px;
+
+    border-radius: 12px;
+
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+
+/* App names */
+
+element-text {
+    padding: 4px;
+
+    background-color: transparent;
+    text-color: @foreground;
+
+    highlight: inherit;
+
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+element-text selected {
+    padding: 4px 8px;
+
+    border-radius: 50%;
+
+    background-color: @selected;
+    text-color: @selected-fg;
+}
+
+
+/* Error message */
+
+error-message {
+    padding: 12px;
+
+    border: 2px solid;
+    border-radius: 12px;
+    border-color: @selected;
+
+    background-color: @background;
+    text-color: @foreground;
+}
+
+
+/* Textbox */
+
+textbox {
+    background-color: @background;
+    text-color: @foreground;
+
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+
+    highlight: none;
+}

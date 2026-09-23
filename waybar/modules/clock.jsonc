@@ -1,0 +1,8 @@
+{
+    "clock": {
+        "timezone": "Asia/Kolkata",
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%d %B %Y}",
+        "tooltip": false
+    }
+}

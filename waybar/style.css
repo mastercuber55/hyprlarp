@@ -1,0 +1,208 @@
+/* ═══════════════════════════════════════════════════════
+   GLOBAL
+   ═══════════════════════════════════════════════════════ */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar > box {
+    background: alpha(#080808, 0.6);
+    border-radius: 10px;
+    margin: 8px 10px 0 10px;
+    padding: 3px 6px;
+}
+
+
+/* ═══════════════════════════════════════════════════════
+   WORKSPACES
+   ═══════════════════════════════════════════════════════ */
+
+#workspaces {
+    margin: 0 0px 0 -3px;
+    padding: 2px 4px;
+
+    background: #383838;
+    border-radius: 8px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    margin: 0 1px;
+
+    color: #777777;
+    background: transparent;
+    border-radius: 6px;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background: #333333;
+}
+
+#workspaces button:hover {
+    color: #dddddd;
+    background: #292929;
+}
+
+
+/* ═══════════════════════════════════════════════════════
+   CLOCK
+   ═══════════════════════════════════════════════════════ */
+
+#clock {
+    margin: 0 4px;
+    padding: 2px 12px;
+
+    color: #ffffff;
+    background: #1b1b1b;
+    border-radius: 8px;
+}
+
+
+/* ═══════════════════════════════════════════════════════
+   MEDIA GROUP
+   ═══════════════════════════════════════════════════════ */
+
+/* Intentionally no background */
+
+#group-media {
+    padding: 0 5px;
+}
+
+#mpris {
+    padding: 0 8px;
+    color: #ffffff;
+}
+
+#custom-media-prev,
+#custom-media-play,
+#custom-media-next {
+    padding: 0 5px;
+    color: #999999;
+    border-radius: 6px;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+#custom-media-prev:hover,
+#custom-media-play:hover,
+#custom-media-next:hover {
+    color: #ffffff;
+    background: #242424;
+}
+
+
+/* ═══════════════════════════════════════════════════════
+   RESOURCES GROUP
+   ═══════════════════════════════════════════════════════ */
+
+#group-resources {
+    margin: 0 4px;
+    padding: 2px 5px;
+
+    background: #1b1b1b;
+    border-radius: 8px;
+}
+
+#cpu,
+#memory,
+#temperature {
+    padding: 0 7px;
+    color: #b0b0b0;
+}
+
+
+/* ═══════════════════════════════════════════════════════
+   CONNECTIVITY GROUP
+   ═══════════════════════════════════════════════════════ */
+
+#group-connectivity {
+    margin: 0 4px;
+    padding: 2px 5px;
+
+    background: #1b1b1b;
+    border-radius: 8px;
+}
+
+#bluetooth,
+#network,
+#pulseaudio {
+    padding: 0 7px;
+    color: #b0b0b0;
+    border-radius: 6px;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+#bluetooth:hover,
+#network:hover {
+    color: #ffffff;
+    background: #292929;
+}
+
+
+/* ═══════════════════════════════════════════════════════
+   PRIVACY
+   ═══════════════════════════════════════════════════════ */
+
+#privacy {
+    margin: 0 4px;
+    padding: 2px 9px;
+
+    color: #b0b0b0;
+    background: #1b1b1b;
+    border-radius: 8px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   TRAY
+   ═══════════════════════════════════════════════════════ */
+
+#tray {
+    margin: 0 4px;
+    padding: 2px 7px;
+
+    background: #1b1b1b;
+    border-radius: 8px;
+}
+
+#tray > .passive {
+    opacity: 0.7;
+}
+
+#tray > .active {
+    opacity: 1;
+}
+
+
+/* ═══════════════════════════════════════════════════════
+   TOOLTIPS
+   ═══════════════════════════════════════════════════════ */
+
+tooltip {
+    background: #111111;
+    border: 1px solid #444444;
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: #ffffff;
+    padding: 4px;
+}
